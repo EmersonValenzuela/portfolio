@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
 
 @keyframes float-slow {
   0%,
@@ -200,13 +199,13 @@ pre[class*="language-"] {
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+* {
+  border-color: hsl(var(--color-border));
+}
+
+body {
+  background-color: hsl(var(--color-background));
+  color: hsl(var(--color-foreground));
 }
 /* Add these classes to adjust the grid colors in the top-left and bottom-right */
 .top-left-grid {
