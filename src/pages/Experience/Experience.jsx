@@ -92,7 +92,8 @@ const ExperienceSection = () => {
       achievements: [
         "Desarrollo del sistema COBIENE para el Ejército",
         "Página web corporativa para estudio de abogados 'Corporativo Planning'",
-        "E-commerce completo para tienda Servitec"
+        "E-commerce completo para tienda Servitec",
+        "Soporte técnico y desarrollo de nuevas funcionalidades en servitecperu.com"
       ]
     },
     {
