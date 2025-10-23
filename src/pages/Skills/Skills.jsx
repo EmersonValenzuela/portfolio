@@ -28,6 +28,7 @@ import {
   SiVercel,
   SiVite,
   SiPnpm,
+  SiVuetify,
 } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
 import { TbBrandVscode } from "react-icons/tb";
@@ -92,8 +93,8 @@ const SkillsSection = () => {
           icon: <SiBootstrap className="w-4 h-4 text-[#7952B3]" />,
         },
         {
-          name: "HTML5",
-          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" />,
+          name: "Vuetify",
+          icon: <SiVuetify className="w-4 h-4 text-[#1867C0]" />,
         },
         {
           name: "Sass",

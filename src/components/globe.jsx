@@ -17,7 +17,6 @@ const slugs = [
   "firebase",
   "nginx",
   "vercel",
-  "pnpm",
   "cpanel",
   "paypal",
   "postman",
@@ -29,6 +28,9 @@ const slugs = [
   "wordpress",
   "bootstrap",
   "figma",
+  "vuetify",
+  "clickup",
+  "visa"
 ];
 
 function IconCloudDemo() {
