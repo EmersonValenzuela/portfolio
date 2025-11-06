@@ -213,7 +213,7 @@ const ProjectMedia = memo(({ mediaType, url, title, color }) => {
   }, [mediaType, url, title]);
 
   return (
-    <div className="w-full md:w-[55%] h-[300px] md:h-[400px] lg:h-[495px] relative overflow-hidden">
+    <div className="w-full md:w-[55%] h-[200px] md:h-[400px] lg:h-[510px] relative overflow-hidden">
       {MediaContent}
       <motion.div
         className="absolute inset-0"
