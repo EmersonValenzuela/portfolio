@@ -68,7 +68,6 @@ export default function Contact() {
     form.append("email", formData.email);
     form.append("subject", formData.subject || "Envío de nuevo formulario de contacto");
     form.append("message", formData.message);
-    form.append("h-captcha-response", captchaToken);
 
 
     try {
