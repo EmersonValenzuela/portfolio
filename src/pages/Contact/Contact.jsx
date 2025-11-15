@@ -5,9 +5,6 @@ import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 export default function Contact() {
 
-  const captchaRef = useRef(null);
-  const [captchaToken, setCaptchaToken] = useState(null);
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -42,11 +39,6 @@ export default function Contact() {
 
     if (!formData.message.trim()) {
       tempErrors.message = "El mensaje es obligatorio.";
-      isValid = false;
-    }
-
-    if (!captchaToken) {
-      tempErrors.captcha = "Por favor completa el captcha.";
       isValid = false;
     }
 
@@ -87,9 +79,6 @@ export default function Contact() {
           message: "",
         });
         setErrors({});
-        setCaptchaToken(null);
-        captchaRef.current?.resetCaptcha();
-
       } else {
         setStatus(result.message || "Error al enviar tu mensaje.");
       }
@@ -233,19 +222,6 @@ export default function Contact() {
                   ></textarea>
                   {errors.message && (
                     <p className="text-red-400 text-sm">{errors.message}</p>
-                  )}
-                </div>
-
-                <div className="space-y-2">
-                  <HCaptcha
-                    sitekey={import.meta.env.VITE_HCAPTCHA_SITE_KEY}
-                    onVerify={(token) => setCaptchaToken(token)}
-                    onExpire={() => setCaptchaToken(null)}
-                    ref={captchaRef}
-                    theme="dark"
-                  />
-                  {errors.captcha && (
-                    <p className="text-red-400 text-sm">{errors.captcha}</p>
                   )}
                 </div>
 
