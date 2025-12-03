@@ -27,22 +27,22 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { id: "home", icon: FaHome, text: "Home", path: "/" },
-    { id: "skills", icon: FaCode, text: "Skills", path: "/skills" },
+    { id: "home", icon: FaHome, text: "Inicio", path: "/" },
+    { id: "skills", icon: FaCode, text: "Habilidades", path: "/skills" },
     {
       id: "experience",
       icon: FaBriefcase,
-      text: "Experience",
+      text: "Experiencia",
       path: "/experience",
     },
     {
       id: "education",
       icon: FaGraduationCap,
-      text: "Education",
+      text: "Educación",
       path: "/education",
     },
-    { id: "projects", icon: FaLaptopCode, text: "Projects", path: "/projects" },
-    { id: "contact", icon: FaEnvelope, text: "Contact", path: "/contact" },
+    { id: "projects", icon: FaLaptopCode, text: "Proyectos", path: "/projects" },
+    { id: "contact", icon: FaEnvelope, text: "Contáctame", path: "/contact" },
   ];
 
   return (
@@ -52,7 +52,7 @@ export default function Header() {
           <nav className="bg-gray-900/90 backdrop-blur-md md:rounded-full px-4 md:px-6 py-2.5">
             {/* Mobile Menu Button */}
             <div className="flex justify-between items-center md:hidden px-2">
-              <Link to="/" className="text-white font-bold">Portfolio</Link>
+              <Link to="/" className="text-white font-bold">Portafolio</Link>
               <button 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-white p-2"
