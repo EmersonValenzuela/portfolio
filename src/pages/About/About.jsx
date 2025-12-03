@@ -1,21 +1,21 @@
 import HeroImg from "@/assets/images/hero.jpg";
-import OlovaLogo from "@/assets/images/olova.png";
 
 export default function About() {
   return (
     <>
-      <section id="about" className="py-16 md:py-32  text-white bg-[#04081A]">
+      <section id="about" className="py-16 md:py-32 text-white bg-[#04081A]">
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
           <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl text-white">
-            Developer, Designer, Creator, Innovator
+            Developer, Builder, Problem Solver
           </h2>
+
           <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
             <div className="relative mb-6 sm:mb-0">
               <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl p-px from-zinc-300 to-transparent">
                 <img
                   src={HeroImg}
                   className="rounded-[15px] shadow block"
-                  alt="payments illustration"
+                  alt="developer illustration"
                   width={1207}
                   height={929}
                 />
@@ -24,45 +24,36 @@ export default function About() {
 
             <div className="relative space-y-4">
               <p className="text-white">
-                Hello! I'm Nazmul Hossain, a passionate JavaScript developer
-                specializing in creating innovative web solutions and
-                user-friendly interfaces.{" "}
-                <span className="font-bold text-white">
-                  As the creator of the OlovaJS UI Framework
-                </span>
-                , I'm dedicated to simplifying development workflows.
+                Hola, soy <span className="font-bold">Emerson Valenzuela</span>,
+                desarrollador web peruano con experiencia en la creación de
+                sistemas modernos, escalables y centrados en la experiencia del
+                usuario. Trabajo principalmente con{" "}
+                <span className="font-bold">JavaScript, Laravel y Vue.js</span>,
+                construyendo soluciones que impactan directamente en procesos
+                empresariales y productos digitales.
               </p>
+
               <p className="text-white">
-                My focus is on making web development faster, easier, and
-                accessible to all developers. Currently, I'm expanding into
-                backend development to grow as a full-stack developer and create
-                seamless, robust web applications.
+                He desarrollado proyectos a medida para empresas, herramientas
+                internas, dashboards administrativos, sistemas de reclamos,
+                integraciones con APIs y plataformas web completas. También me
+                desempeño como freelance, apoyando a equipos que necesitan
+                avanzar rápido con software confiable.
               </p>
 
               <div className="pt-6">
                 <blockquote className="border-l-4 border-gray-300 pl-4">
                   <p className="text-white">
-                    I'm a lifelong learner and innovator, driven by a desire to
-                    contribute to the developer community with new ideas and
-                    tools that deliver real value. As the creator of OlovaJS,
-                    I'm pushing the boundaries of JavaScript frameworks to
-                    empower developers worldwide.
+                    Me considero un profesional que aprende constantemente y que
+                    busca construir soluciones que realmente agreguen valor.
+                    Disfruto optimizar procesos, diseñar interfaces claras y
+                    crear productos que simplifican la vida de las personas.
                   </p>
 
                   <div className="mt-6 space-y-3">
                     <cite className="block font-medium text-white">
-                      Nazmul Hossain, Creator of
+                      Emerson Valenzuela – Web Developer, Perú
                     </cite>
-                    <div className="flex items-center gap-2">
-                      <img
-                        className="h-5 w-fit"
-                        src={OlovaLogo}
-                        alt="Olova Logo"
-                        height="20"
-                        width="auto"
-                      />
-                      <span className="text-white">OlovaJS</span>
-                    </div>
                   </div>
                 </blockquote>
               </div>
